@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <div class="mainContainer">
+        <div class="sideBar">
+
+            <!-- Search Bar -->
+            <div class="searchBarWrapper">
+                <div class="searchBar">
+                    <img src="./images/search.svg">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- Contacts -->
+            <div class="contactsWrapper">
+                <ul>
+                    <li>
+                        <img src="./images/daryl.png">
+                        <div class="text">
+                            <div>
+                                <p class="name">Darin Austin</p>
+                                <p class="lastMessage">This is a message</p>
+                            </div>
+                            <p class="date">Apr 16</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <img src="./images/kim.jpeg">
+                        <div class="text">
+                            <div>
+                                <p class="name">Kim O'Neil</p>
+                                <p class="lastMessage">Very funny</p>
+                            </div>
+                            <p class="date">2 days ago</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <img src="./images/john.jpeg">
+                        <div class="text">
+                            <div>
+                                <p class="name">John Anderson</p>
+                                <p class="lastMessage">Yes I love how Python does that! </p>
+                            </div>
+                            <p class="date">1 week ago</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <img src="./images/ben.png">
+                        <div class="text">
+                            <div>
+                                <p class="name">Ben Smith</p>
+                                <p class="lastMessage">Yeah Miami Heat are done</p>
+                            </div>
+                            <p class="date">2:49 PM</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <img src="./images/douglas.png">
+                        <div class="text">
+                            <div>
+                                <p class="name">Douglas Johannasen</p>
+                                <p class="lastMessage">No it does not</p>
+                            </div>
+                            <p class="date">Apr 16</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="./images/jacob.png">
+                        <div class="text">
+                            <div>
+                                <p class="name">Jacob Manly</p>
+                                <p class="lastMessage">Just be very careful doing that</p>
+                            </div>
+                            <p class="date">3 sec ago</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="./images/douglas.png">
+                        <div class="text">
+                            <div>
+                                <p class="name">Douglas Johannasen</p>
+                                <p class="lastMessage">No it does not</p>
+                            </div>
+                            <p class="date">Apr 16</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="./images/stacey.jpeg">
+                        <div class="text">
+                            <div>
+                                <p class="name">Stacey Wilson</p>
+                                <p class="lastMessage">Awesome!!! Congratulations!!!</p>
+                            </div>
+                            <p class="date">30 min ago</p>
+                        </div>
+                    </li>
+                </ul>
+            
+            </div>
+
+            <!-- New Message -->
+            <div class="newWrapper">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </div>
+
+        </div>
+        <div class="mainBody">
+
+            <div class="currentMessager">
+                <h1>Darin Austin</h1>
+                <img src="./images/trash-logo.svg">
+            </div>
+
+            <div class="messagesWrapper">
+                <ul>
+                    <!-- Received Message -->
+                    <li class="received">
+                        <div class="message">
+                            <!-- Profile Picture -->
+                            <img src="./images/daryl.png">
+                            <div>
+                                <!-- Message Box -->
+                                <div class="box">
+                                    <p class="messageContents"> I'm just in the process of finishing off the last pieces of material for the course.</p>
+                                </div>
+                                <p class="sentDate">Apr 14</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Sent Message -->
+                    <li class="sent">
+                        <div class="message">
+                            <div class="box">
+                                <p class="messageContents">Well we need to work out sometime soon where we really want to record our video course.
+
+                                </p>
+                            </div>
+                            <p class="sentDate">Apr 15</p>
+                        </div>
+                    </li>
+
+                    <!-- Received Message -->
+                    <li class="received">
+                        <div class="message">
+                            <!-- Profile Picture -->
+                            <img src="./images/daryl.png">
+                            <div>
+                                <!-- Message Box -->
+                                <div class="box">
+                                    <p class="messageContents">All I know is where I live it's too hard to record because of all the street noise.</p>
+                                </div>
+                                <p class="sentDate">Apr 16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Sent Message -->
+                    <li class="sent">
+                        <div class="message">
+                            <div class="box">
+                                <p class="messageContents">Maybe we can use Jim's studio.
+                                </p>
+                            </div>
+                            <p class="sentDate">Apr 15</p>
+                        </div>
+                    </li>
+
+                    <!-- Received Message -->
+                    <li class="received">
+                        <div class="message">
+                            <!-- Profile Picture -->
+                            <img src="./images/daryl.png">
+                            <div>
+                                <!-- Message Box -->
+                                <div class="box">
+                                    <p class="messageContents">Yeah I think it's best we do that. Otherwise things won't work well at all. I'm adding more text here to test the sizing of the speech bubble and the wrapping of it too.
+                                    </p>
+                                </div>
+                                <p class="sentDate">Apr 16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    <!-- Sent Message -->
+                    <li class="sent">
+                        <div class="message">
+                            <div class="box">
+                                <p class="messageContents">Ok then
+                                </p>
+                            </div>
+                            <p class="sentDate">Apr 16</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="sendMessageWrapper">
+                <img src="./images/attachment-logo.svg">
+                <input type="text" name="message" id="message" placeholder="type a message">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ion Icons JS Links -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

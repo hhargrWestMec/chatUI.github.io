@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #80bce4, #476fa4);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sideBar {
+    width: 30%;
+    height: 100%; 
+    background-color: #2d4aa4;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sideBar .searchBarWrapper {
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBar .searchBarWrapper .searchBar {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    background-color: #6c81bf;
+    border-radius: 15px;
+}
+
+.searchBar img {
+    height: 50px;
+    width: 50px;
+}
+
+.searchBar input {
+    width: 80%;
+    height: 60%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.contactsWrapper {
+    width: 100%;
+    height: 75%;
+}
+
+.contactsWrapper ul {
+    list-style-type: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactsWrapper ul li {
+    width: 95%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.contactsWrapper ul li img {
+    border-radius: 50%;
+}
+
+.contactsWrapper ul li .text {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactsWrapper ul li .text div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(10px);
+    font-size: 0.9em;
+}
+
+.contactsWrapper ul li .text div .name {
+    font-weight: bold;
+}
+
+.contactsWrapper ul li .text .date {
+    transform: translateY(-10px);
+    font-size: 0.9em;
+}
+
+
+
+
+
+.newWrapper {
+    width: 100%;
+    height: 10%;
+    border-top: 2px solid black;
+
+}
+
+.newWrapper ion-icon {
+    color: white;
+    font-size: 3em;
+    padding: 1.25%;
+}
+
+.newWrapper ion-icon:hover { 
+    color: gray;
+}
+
+
+.mainBody {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.currentMessager {
+    width: 90%;
+    height: 15%;
+    background-color: #eee;
+    border-bottom: 2px solid #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    border-top-right-radius: 15px;
+    
+}
+
+.currentMessager h1 {
+    font-family: sans-serif;
+    color: #2d4aa4;
+}
+
+.currentMessager img {
+    height: 50px;
+}
+
+.messagesWrapper {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+.messagesWrapper ul {
+    list-style-type: none;
+}
+
+.messagesWrapper ul .received, .messagesWrapper ul .sent {
+    width: 100%;
+    height: fit-content;
+}
+
+.received .message {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5%;
+    width: 67.5%;
+    margin-left: 2.5%;
+}
+
+.received .message img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.received .message div .box {
+    background-color: #eeeeee;
+    border: 0.5px solid #c6c6c6;
+    height: fit-content;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    
+}
+
+.messageContents {
+    padding: 12.5px;
+    font-family: sans-serif;
+}
+
+.sentDate {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #9e9e9e;
+    padding: 2.5px;
+}
+
+
+
+
+.sent .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    column-gap: 2.5%;
+    width: 65%;
+    margin-left: 32.5%;
+}
+
+.sent .message .box {
+    color: white;
+    background-color: #2d4aa4;
+    border: 0.5px solid #000;
+    height: fit-content;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    
+}
+
+
+
+
+
+
+.sendMessageWrapper {
+    height: 9.5%;
+    width: 95%;
+    background-color: #eee;
+    border-top: 2px solid #d2d2d2;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    column-gap: 2.5%;
+    border-bottom-right-radius: 15px;
+}
+
+.sendMessageWrapper img {
+    height: 40px;
+}
+
+.sendMessageWrapper input {
+    height: 70%;
+    width: 87.5%;
+    border: 2px #dcdcdc solid;
+    border-radius: 10px;
+    outline: none;
+    font-size: 2em;
+    padding-left: 2.5%;
+}
+
+.sendMessageWrapper input::placeholder {
+    color: #dcdcdc;
+    font-size: 0.75em;  
+}
+
